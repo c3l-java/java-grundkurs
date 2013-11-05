@@ -3,7 +3,7 @@
     Adapted from http://www.ntu.edu.sg/home/ehchua/programming/java/J2a_BasicsExercises.html
     
     Exercise SquareBoard (nested-loop): Write a program called 
-    SquareBoard that displays the following n×n (n=5) pattern 
+    SquareBoard that displays the following nxn (n=5) pattern 
     using two nested for-loops.
 
     # # # # #
