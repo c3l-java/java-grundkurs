@@ -2,7 +2,7 @@
     Adapted from http://www.ntu.edu.sg/home/ehchua/programming/java/J2a_BasicsExercises.html
     
     Check to see if the number entered is even. If it is print "even" 
-    in the terminal other wise pint odd.
+    in the terminal other wise pint "odd".
 
     Hint you will need % modulus. (n % 2) is 0
  */

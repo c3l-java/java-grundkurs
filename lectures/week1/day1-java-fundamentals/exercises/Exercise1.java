@@ -4,7 +4,7 @@
     Change the code below so that if the mark is greater
     than or equal to 50 "pass" is printed in terminal otherwise print "fail"
 
-    Change th value of variable mark to test the differnet scenarios
+    Change th value of variable mark to test the different scenarios
  */
 class Exercise1 { // saved as "CheckPassFail.java"
     public static void main(String[] args) {
