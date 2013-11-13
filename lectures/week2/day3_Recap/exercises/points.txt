@@ -1,0 +1,6 @@
+You are writing a computer game with a number of items on the screen. Each one of these items has a central x,y position in pixels. You need to constantly work out if the character is touching one of these items so descide to create a point class that each item will use for it's position. The point class contains the x,y position in pixels of where the item is positioned.
+
+1) Create a Point class.
+2) Create the relevant constructor.
+3) Create a method called getDistance that recieves another point as an input parameter and returns the distance in pixels from the current point to the point sent as a parameter.
+
