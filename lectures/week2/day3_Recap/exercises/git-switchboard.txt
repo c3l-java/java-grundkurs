@@ -1,7 +1,7 @@
-GIT command line switch board.
+GIT command line switchboard.
 You have been given the job of writing the controller functionality of a java version of git.
 
-The code is going to be run like as follows
+The input and output of your program to console should be as follows
 
 input -> java git
 output -> 	Please use one of the following commands
@@ -21,7 +21,7 @@ output -> 	successfully committed
 input -> java git add
 output -> 	Nothing specified, nothing added.
 		 	Maybe you wanted to say 'git add -A'?
-		 	
+
 input -> java git add -A
 output -> 	successfully added all files
 
