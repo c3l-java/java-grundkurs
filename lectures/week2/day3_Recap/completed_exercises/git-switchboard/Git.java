@@ -2,12 +2,29 @@ import java.io.IOException;
 class Git {
 	public static void main(String[] args) throws IOException{
 		String wrongCommand = "Please use one of the following commands\n\n" +
-							  "\tcommit : to commit changes to the current branch\n" +
 							  "\tadd : to add new files to the current branch\n" +
+							  "\tcommit : to commit changes to the current branch\n" +
 							  "\tpush : to push changes from a branch to a remote repository\n" +
 							  "\tpull : to recieve changes from a remote repository";
 		if(args.length > 0){
 			switch(args[0]){
+				case "add":
+					switch(args.length){
+						case 1:
+							System.out.println("Nothing specified, nothing added.");
+		 					System.out.println("Maybe you wanted to say 'Git add -A'?");
+							break;
+						case 2:
+							if(args[1].equals("-A")){
+								System.out.println("Successfully added all files");
+							} else {
+								System.out.println("Successfully added " + args[1]);
+							}
+							break;
+						default:
+							System.out.println("Wrong parameters for an add");	
+					}	
+				break;
 				case "commit":
 					switch(args.length){
 						case 1:
@@ -31,23 +48,6 @@ class Git {
 						default:
 							System.out.println("Wrong parameters for a commit");
 					}
-				break;
-				case "add":
-					switch(args.length){
-						case 1:
-							System.out.println("Nothing specified, nothing added.");
-		 					System.out.println("Maybe you wanted to say 'Git add -A'?");
-							break;
-						case 2:
-							if(args[1].equals("-A")){
-								System.out.println("Successfully added all files");
-							} else {
-								System.out.println("Successfully added " + args[1]);
-							}
-							break;
-						default:
-							System.out.println("Wrong parameters for an add");	
-					}	
 				break;
 				case "push":
 					switch(args.length){
