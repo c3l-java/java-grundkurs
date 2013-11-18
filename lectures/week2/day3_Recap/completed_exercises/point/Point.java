@@ -7,6 +7,7 @@ class Point {
 	}
 	int getDistance(Point point){
 		double width, height;
+		// Distance to 
 		width = point.x  - this.x;
 		height = point.y - this.y;
 		return (int)Math.sqrt((width * width) + (height * height));
