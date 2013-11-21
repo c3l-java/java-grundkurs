@@ -29,7 +29,6 @@ class GradeAverage {
 		}
 	}
 	
-	
 	/*
 	 * readNumberFromTerminal encapsulates all the code to read a number from the terminal
 	 * It returns a positive number if the number was valid and -1 if the input was not a valid number.
@@ -56,5 +55,4 @@ class GradeAverage {
 			return -1;
 		}
 	}
-
 }
