@@ -3,11 +3,10 @@ class Recursion {
 		System.out.println(blocksInTriangle(4));
 	}
 	public static int blocksInTriangle(int rows){
-		if(rows > 0){
-			return rows += blocksInTriangle(--rows); 
-		} else {
+		if(rows == 1){
 			return rows;
+		} else {
+			return rows += blocksInTriangle(--rows); 
 		}	
-		
 	}
 }
