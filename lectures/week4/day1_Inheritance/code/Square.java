@@ -1,9 +1,14 @@
-public class Square extends TwoDShape {
-	boolean isSquare(){
-		return (width == height); 
+public class Square extends TwoDShape{
+	Square(double length){
+		super(length, length);
 	}
-	double area() {
-		return width * height;
+
+	@Override
+	public double getArea() {
+		return super.getWidth() * super.getWidth();
 	}
-	
+	public String toString(){
+		return "Square length:" + getWidth();
+	}
+
 }
