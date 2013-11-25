@@ -40,7 +40,7 @@ class GradeAverage {
 		while (ch != '\n') {
 			// A simple error trap makes sure that the characters entered are
 			// numbers
-			if (ch >= '0' || ch <= '9') {
+			if (ch >= '0' && ch <= '9') {
 				input += ch;
 			} else {
 				while (System.in.read() != '\n');
