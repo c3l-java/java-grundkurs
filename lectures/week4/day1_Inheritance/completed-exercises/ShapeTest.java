@@ -11,7 +11,7 @@ public class ShapeTest {
 		shapes[4] = new Circle();
 		
 		for(Shape shape: shapes){
-			System.out.println(shape.equals(new Circle(4.7, "blue", false)));
+			System.out.print(shape.equals(new Circle(4.7, "blue", false)));
 			System.out.println(shape.getArea());
 		}
 		
