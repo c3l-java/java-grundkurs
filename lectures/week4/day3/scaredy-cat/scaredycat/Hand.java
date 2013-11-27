@@ -14,7 +14,7 @@ public class Hand extends CardHandler {
 	}
 
 	public String[] getCards() {
-		// We start by building a string with each card in our array written out
+		// We start by building a string with each card in our hand written out
 		// with a comma after it.
 		String cardsString = "";
 		for (int i = 0; i < cards.length; i++) {
