@@ -5,6 +5,11 @@ public class Deck extends CardHandler{
 	private int cardCount;
 
 	public Deck(){	
+		// Cards is an array where each index is the number of cards 
+		// of a specific type. 
+		// 	i.e cards[0] = 3; 
+		// 	index 0 is where we save cat cards so this sets there 
+		// 	to be 3 cats in our deck
 		cards = new int[8];
 		cards[0] = 3; // Cats
 		cards[1] = 7; // 1 Bird
