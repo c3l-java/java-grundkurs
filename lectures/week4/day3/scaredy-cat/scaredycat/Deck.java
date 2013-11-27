@@ -24,19 +24,24 @@ public class Deck extends CardHandler{
 		
 	public String getCard(){
 		// We need to get a weighted random number based on the type and number of cards
-		// left in the pack
-		int randomIndex = (int)Math.floor(Math.random() * cardCount); // 0-48
+		// left in the pack. This weighted random number (cardIndex) is the index of 
+		// the card we should return.
+		int randomIndex = (int)Math.floor(Math.random() * cardCount);
 		int cardIndex = -1;
-		int sum = 0;
+		int minRange = 0;
 		for(int i = 0; i < cards.length; i++){
-			if(randomIndex >= sum && randomIndex < (cards[i] + sum) ){
-				cardCount--;
+			if(randomIndex >= minRange && randomIndex < (cards[i] + minRange) ){
+				// Remove the card from the deck
 				cards[i]--;
+				// Subtract 1 from the counter that keeps record of how many cards 
+				// we have in the deck.
+				cardCount--;
 				cardIndex = i;
 				break;
 			}
-			sum += cards[i];
+			minRange += cards[i];
 		}
+		// change the cardIndex into it's string name
 		return cardNames[cardIndex];		
 	}
 	
